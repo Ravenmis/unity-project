@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: b28d94f01185c574da152659e1f715a0
+  - enabled: 1
+    path: Assets/Scenes/Tanks.unity
+    guid: 6348cf79cc8e5c14b8a5cfbeb8bf8a32
+  - enabled: 1
+    path: Assets/Scenes/TanksLVL2.unity
+    guid: 7468c34febd4c72419efc66defb57fb2
+  - enabled: 1
+    path: Assets/Scenes/Lose.unity
+    guid: 7762410d113687943ad0c7592ca379e4
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 336785e5a6514c546b090fb0180acc26
+  - enabled: 1
+    path: Assets/Scenes/PingPong.unity
+    guid: d89576521391bdb4e89bea45c35c81d6
+  m_configObjects: {}
