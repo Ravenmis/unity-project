@@ -39,23 +39,16 @@ public class GameControl : MonoBehaviour {
 	void OnGUI()
 	{
 		scoreText.text = score.ToString();
-<<<<<<< HEAD
 		{
 			Debug.Log("work");
 		}
 		tankText.text = "Tank:\n" + maxEnemy;
 	}
-=======
-		tankText.text = "Tank:\n" + maxEnemy;
-	}
-
->>>>>>> ea0684c2548ec61c848b559a17402746c6430999
 	void Update ()
 	{
 		if (playerDead)
 		{
 			playerDead = false;
-<<<<<<< HEAD
 			SceneManager.LoadScene(3);
 		}
 		if (score > 749 )
@@ -63,14 +56,4 @@ public class GameControl : MonoBehaviour {
 			SceneManager.LoadScene(2);
 		}
 	}
-=======
-			SceneManager.LoadScene(2);
-		}
-		if (score > 600 )
-		{
-			SceneManager.LoadScene(3);
-		}
-	}
-
->>>>>>> ea0684c2548ec61c848b559a17402746c6430999
 }
