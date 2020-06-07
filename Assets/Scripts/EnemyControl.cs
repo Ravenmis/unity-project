@@ -6,7 +6,6 @@ public class EnemyControl : MonoBehaviour
 {
 
 	public int score = 50;
-	public int HP = 1;
 	public Transform explosion;
 	public float speed = 100f;
 	public Animator _animator;
@@ -19,13 +18,15 @@ public class EnemyControl : MonoBehaviour
 	public float minMoveTime = 0.5f;
 	public float maxMoveTime = 5.5f;
 	public CheckMove check;
+	public object bonusHealth;
+	public object bonusSpeed;
+
+	private int HP = 1;
 	private Rigidbody2D body;
 	private Vector2 moveDirection;
 	private Vector3 rotation;
 	private int move;
 	private bool fire;
-	public object bonusHealth;
-	public object bonusSpeed;
 
 	void Start()
 	{
@@ -107,23 +108,21 @@ public class EnemyControl : MonoBehaviour
 		}
 
 		tank.localRotation = Quaternion.Euler(rotation);
+	}
 
-		if (HP <= 0)
+	public void GetDamage(int damage)
+	{
+		if (HP - damage <= 0)
 		{
 			GameControl.score += score;
 			float randomZ = UnityEngine.Random.Range(0, 360f);
 			Instantiate(explosion, transform.position, Quaternion.Euler(0, 0, randomZ));
 			Destroy(gameObject);
-
 		}
-		
-
-
-
-
+		HP -= damage;
 	}
 
-	private void Instantiate(object bonusHealth)
+	private void DropBonus(object bonusHealth)
 	{
 		throw new NotImplementedException();
 	}

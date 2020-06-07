@@ -479,14 +479,41 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 235051258}
-  - component: {fileID: 235051259}
+  - component: {fileID: 235051257}
   m_Layer: 0
   m_Name: GameControl
-  m_TagString: Untagged
+  m_TagString: GameControl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &235051257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235051256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ca3ac17ca1e33a40b01be54bba67313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpawn:
+  - {fileID: 1340264780}
+  - {fileID: 692978732}
+  - {fileID: 1658670408}
+  - {fileID: 1076945235}
+  - {fileID: 489591299}
+  enemySpawnTime: 15
+  GameOverSceneDelay: 2
+  maxEnemy: 3
+  ScoreToNexLevel: 1499
+  playerSpawn: {fileID: 2020892863}
+  player: {fileID: 139594, guid: 9ef2aeb1ac2c9fc4db9bc0fc0f128822, type: 3}
+  enemy: {fileID: 176272, guid: 5f2152ff1ff238a48b4a8c9b13e1ccf3, type: 3}
+  scoreText: {fileID: 523829226}
+  tankText: {fileID: 1941837137}
 --- !u!4 &235051258
 Transform:
   m_ObjectHideFlags: 0
@@ -498,41 +525,15 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 489591299}
   - {fileID: 2020892863}
   - {fileID: 1340264780}
   - {fileID: 692978732}
   - {fileID: 1658670408}
   - {fileID: 1076945235}
+  - {fileID: 489591299}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &235051259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 235051256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51f1b5abf9ceb8e4184c6bc4c6e5ed02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemySpawn:
-  - {fileID: 1340264780}
-  - {fileID: 692978732}
-  - {fileID: 1658670408}
-  - {fileID: 1076945235}
-  - {fileID: 489591299}
-  enemySpawnTime: 15
-  maxEnemy: 3
-  playerSpawn: {fileID: 2020892863}
-  player: {fileID: 139594, guid: 9ef2aeb1ac2c9fc4db9bc0fc0f128822, type: 3}
-  enemy: {fileID: 176272, guid: 5f2152ff1ff238a48b4a8c9b13e1ccf3, type: 3}
-  scoreText: {fileID: 523829226}
-  tankText: {fileID: 1941837137}
-  enemyDead: 0
 --- !u!1001 &268848586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1124,7 +1125,7 @@ Transform:
   m_LocalScale: {x: 0.14999999, y: 0.14999999, z: 1}
   m_Children: []
   m_Father: {fileID: 235051258}
-  m_RootOrder: 0
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &489591300
 SpriteRenderer:
@@ -1728,7 +1729,7 @@ Transform:
   m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_Children: []
   m_Father: {fileID: 235051258}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &692978733
 SpriteRenderer:
@@ -2556,7 +2557,7 @@ Transform:
   m_LocalScale: {x: 0.14999999, y: 0.14999999, z: 1}
   m_Children: []
   m_Father: {fileID: 235051258}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1076945236
 SpriteRenderer:
@@ -3394,7 +3395,7 @@ Transform:
   m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_Children: []
   m_Father: {fileID: 235051258}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1340264781
 SpriteRenderer:
@@ -4111,7 +4112,7 @@ Transform:
   m_LocalScale: {x: 0.10692064, y: 0.08107301, z: 1}
   m_Children: []
   m_Father: {fileID: 235051258}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1658670409
 SpriteRenderer:
@@ -4736,7 +4737,7 @@ Transform:
   m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_Children: []
   m_Father: {fileID: 235051258}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2020892864
 SpriteRenderer:

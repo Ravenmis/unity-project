@@ -70,6 +70,7 @@ public class GameControl : MonoBehaviour
 		//}
 		if (score > ScoreToNexLevel)
 		{
+			//TODO: beautifull scene transition
 			SceneManager.LoadScene(2);
 		}
 	}
@@ -82,6 +83,7 @@ public class GameControl : MonoBehaviour
     private IEnumerator DelayLoadGameOverScene()
     {
 		yield return new WaitForSecondsRealtime(GameOverSceneDelay);
+		score = 0;
 		SceneManager.LoadScene(3);
     }
 }

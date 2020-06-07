@@ -15,6 +15,9 @@ TagManager:
   - Block
   - Wall
   - pausePanel
+  - GameControl
+  - Bonus
+  - BonusSpawnController
   layers:
   - Default
   - TransparentFX
@@ -25,9 +28,9 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - WatterIgnore
+  - Bullet
+  - Bonus
   - 
   - 
   - 

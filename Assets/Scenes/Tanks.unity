@@ -181,7 +181,7 @@ GameObject:
   m_Layer: 0
   m_Name: BonusSpawnPoint (5)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -193,7 +193,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31639807}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.14, y: -2.36, z: 0}
+  m_LocalPosition: {x: 4.973, y: -2.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1530100116}
@@ -354,7 +354,7 @@ GameObject:
   m_Layer: 0
   m_Name: BonusSpawnPoint (2)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -573,7 +573,7 @@ GameObject:
   m_Layer: 0
   m_Name: BonusSpawnPoint (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1045,7 +1045,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 442840, guid: ecf695f39385339459fed9101b9561b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: .75
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 442840, guid: ecf695f39385339459fed9101b9561b1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1359,7 +1359,7 @@ GameObject:
   m_Layer: 0
   m_Name: BonusSpawnPoint (7)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1487,7 +1487,7 @@ GameObject:
   m_Layer: 0
   m_Name: Player_Spawn_1
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1682,7 +1682,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 442840, guid: ecf695f39385339459fed9101b9561b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: .75
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 442840, guid: ecf695f39385339459fed9101b9561b1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2178,7 +2178,7 @@ GameObject:
   m_Layer: 0
   m_Name: Enemy_Spawn_2
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2448,7 +2448,7 @@ GameObject:
   m_Layer: 0
   m_Name: BonusSpawnPoint (6)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2776,7 +2776,7 @@ GameObject:
   m_Layer: 0
   m_Name: Enemy_Spawn_3
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3018,7 +3018,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 442840, guid: ecf695f39385339459fed9101b9561b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -.75
+      value: -0.75
       objectReference: {fileID: 0}
     - target: {fileID: 442840, guid: ecf695f39385339459fed9101b9561b1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3306,7 +3306,7 @@ GameObject:
   m_Layer: 0
   m_Name: Enemy_Spawn_1
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3388,7 +3388,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 442840, guid: ecf695f39385339459fed9101b9561b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -.75
+      value: -0.75
       objectReference: {fileID: 0}
     - target: {fileID: 442840, guid: ecf695f39385339459fed9101b9561b1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3691,7 +3691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 442840, guid: ecf695f39385339459fed9101b9561b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -.75
+      value: -0.75
       objectReference: {fileID: 0}
     - target: {fileID: 442840, guid: ecf695f39385339459fed9101b9561b1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3820,7 +3820,7 @@ GameObject:
   - component: {fileID: 1530100117}
   m_Layer: 0
   m_Name: BonusPoints
-  m_TagString: Untagged
+  m_TagString: BonusSpawnController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3833,7 +3833,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1530100115}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.57, y: 0.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1681216222}
@@ -3859,7 +3859,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d94c21c0dc5bc17478724f2ee490ed74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BonusSpawnTime: 0
+  UsedPoints: []
+  BonusSpawnTime: 5
+  Bonuses:
+  - {fileID: 5123729276878763656, guid: ca10f3afe65f34043bc459e8318dc855, type: 3}
+  - {fileID: 5585864014128781051, guid: 359768eeb61e2134fbe227db657393cc, type: 3}
+  - {fileID: 7601584920040286010, guid: c7b165999be32494ab6a61b0ba508c93, type: 3}
+  - {fileID: 9127501219478691550, guid: b77fc74a4cf8a9749ab82773c5be0bf1, type: 3}
 --- !u!1001 &1538989867
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3873,7 +3879,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 442840, guid: ecf695f39385339459fed9101b9561b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: .75
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 442840, guid: ecf695f39385339459fed9101b9561b1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3974,7 +3980,7 @@ GameObject:
   m_Layer: 0
   m_Name: BonusSpawnPoint
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4324,7 +4330,7 @@ GameObject:
   m_Layer: 0
   m_Name: BonusSpawnPoint (4)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4667,7 +4673,7 @@ GameObject:
   m_Layer: 0
   m_Name: BonusSpawnPoint (3)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
