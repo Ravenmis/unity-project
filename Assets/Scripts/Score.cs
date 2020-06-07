@@ -16,6 +16,5 @@ public class Score : MonoBehaviour
     void LateUpdate()
     {
         scoreTxt.text = "Score: " + score;
-       
     }
 }

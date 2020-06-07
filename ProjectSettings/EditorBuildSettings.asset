@@ -12,12 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Tanks.unity
     guid: 6348cf79cc8e5c14b8a5cfbeb8bf8a32
   - enabled: 1
-<<<<<<< HEAD
     path: Assets/Scenes/TanksLVL2.unity
     guid: 7468c34febd4c72419efc66defb57fb2
   - enabled: 1
-=======
->>>>>>> ea0684c2548ec61c848b559a17402746c6430999
     path: Assets/Scenes/Lose.unity
     guid: 7762410d113687943ad0c7592ca379e4
   - enabled: 1

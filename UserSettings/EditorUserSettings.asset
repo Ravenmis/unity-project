@@ -5,12 +5,6 @@ EditorUserSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 4
   m_ConfigSettings:
-<<<<<<< HEAD
-=======
-    lightmappingDeviceAndPlatform:
-      value: 53
-      flags: 0
->>>>>>> ea0684c2548ec61c848b559a17402746c6430999
     vcSharedLogLevel:
       value: 0d5e400f0650
       flags: 0
