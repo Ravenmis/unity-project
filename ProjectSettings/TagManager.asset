@@ -14,6 +14,7 @@ TagManager:
   - Enemy
   - Block
   - Wall
+  - GameControl
   layers:
   - Default
   - TransparentFX

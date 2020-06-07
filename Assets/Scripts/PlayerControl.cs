@@ -78,7 +78,7 @@ public class PlayerControl : MonoBehaviour {
 
 		if(HP <= 0)
 		{
-			GameControl.playerDead = true;
+			GameControl.Instance.OnPlayerDead();
 			float randomZ = Random.Range(0, 360f);
 			Instantiate(explosion, transform.position, Quaternion.Euler(0, 0, randomZ));
 			Destroy(gameObject);

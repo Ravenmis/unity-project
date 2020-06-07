@@ -2,58 +2,86 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
-public class GameControl : MonoBehaviour {
+public class GameControl : MonoBehaviour
+{
+	private static GameControl _instance;
+	public static GameControl Instance
+	{
+		get
+		{
+			if (!_instance)
+				_instance = GameObject.FindGameObjectWithTag("GameControl")
+					.GetComponent<GameControl>();
+			return _instance;
+		}
+	}
 
-	public static bool playerDead;
+	//public bool playerDead;
 	public static int score;
 	public Transform[] enemySpawn;
 	public float enemySpawnTime = 15;
+	public float GameOverSceneDelay = 2f;
 	public int maxEnemy = 15;
+	public int ScoreToNexLevel = 749;
 	public Transform playerSpawn;
 	public GameObject player;
 	public GameObject enemy;
 	public Text scoreText;
 	public Text tankText;
 
-	void Start () 
+	void Start()
 	{
 		maxEnemy = maxEnemy * 5;
-		playerDead = false;
-		score = 0;
+		//playerDead = false;
+		//score = 0;
 		Instantiate(player, playerSpawn.position, Quaternion.identity);
-		StartCoroutine (WaitEnemySpawn(enemySpawnTime));
+		StartCoroutine(WaitEnemySpawn(enemySpawnTime));
 	}
 
 	IEnumerator WaitEnemySpawn(float t)
 	{
-		foreach(Transform obj in enemySpawn)
+		foreach (Transform obj in enemySpawn)
 		{
 			maxEnemy--;
 			Instantiate(enemy, obj.position, Quaternion.identity);
 		}
-		yield return new WaitForSeconds (t);
-		if(maxEnemy > 0) StartCoroutine (WaitEnemySpawn(enemySpawnTime));
+		yield return new WaitForSeconds(t);
+		if (maxEnemy > 0)
+			StartCoroutine(WaitEnemySpawn(enemySpawnTime));
 	}
 
 	void OnGUI()
 	{
 		scoreText.text = score.ToString();
 		{
-			Debug.Log("work");
+			//Debug.Log("work");
 		}
 		tankText.text = "Tank:\n" + maxEnemy;
 	}
-	void Update ()
+
+	void Update()
 	{
-		if (playerDead)
-		{
-			playerDead = false;
-			SceneManager.LoadScene(3);
-		}
-		if (score > 749 )
+		//if (playerDead)
+		//{
+		//	playerDead = false;
+		//	SceneManager.LoadScene(3);
+		//}
+		if (score > ScoreToNexLevel)
 		{
 			SceneManager.LoadScene(2);
 		}
 	}
+
+	public void OnPlayerDead()
+	{
+		StartCoroutine(DelayLoadGameOverScene());
+	}
+
+    private IEnumerator DelayLoadGameOverScene()
+    {
+		yield return new WaitForSecondsRealtime(GameOverSceneDelay);
+		SceneManager.LoadScene(3);
+    }
 }
