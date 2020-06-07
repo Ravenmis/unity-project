@@ -13,6 +13,7 @@ public class GC2 : MonoBehaviour {
     public GameObject enemy;
     public Text scoreText;
     public Text tankText;
+    public bool enemyDead;
     void Start () 
     {
         maxEnemy = maxEnemy * 5;
@@ -31,11 +32,11 @@ public class GC2 : MonoBehaviour {
         yield return new WaitForSeconds (t);
         if(maxEnemy > 0) StartCoroutine (WaitEnemySpawn(enemySpawnTime));
     }
-    void OnGUI()
-    {
-        scoreText.text = score.ToString();
-        tankText.text = "Tank:\n" + maxEnemy;
-    }
+  void OnGUI()
+	{
+		scoreText.text = score.ToString();
+		tankText.text = "Tank:\n" + maxEnemy;
+	}
     void Update ()
     {
         if (playerDead)
@@ -46,6 +47,10 @@ public class GC2 : MonoBehaviour {
         if (score > 1499 )
         {
             SceneManager.LoadScene(4);
+        }
+        if (enemy)
+        {
+            // scoreText;
         }
     }
 }

@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class enemyScript : MonoBehaviour
 {
-    // Start is called before the first frame update
     public int speed = 2;
     void Start()
     {
         GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0);
     }
-
-    // Update is called once per frame
     void Update()
     {
         if (transform.position.x >= 6)

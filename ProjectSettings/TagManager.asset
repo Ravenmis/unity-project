@@ -14,7 +14,7 @@ TagManager:
   - Enemy
   - Block
   - Wall
-  - GameControl
+  - pausePanel
   layers:
   - Default
   - TransparentFX
