@@ -21,23 +21,32 @@ public class Bullet : MonoBehaviour {
 				Destroy(coll.transform.gameObject);
 				Destroy(gameObject);
 			}
-			
-			if(!isEnemy)
+
+			if (coll.transform.CompareTag("Bonus"))
+			{
+				Destroy(coll.transform.gameObject);
+				Destroy(gameObject);
+			}
+
+			if (!isEnemy)
 			{
 				if(coll.transform.CompareTag("Enemy"))
 				{
-					EnemyControl enemy = coll.transform.GetComponent<EnemyControl>();
-					enemy.HP -= damage;
+					coll.transform
+						.GetComponent<EnemyControl>()
+						.GetDamage(damage);
+
 					Destroy(gameObject);
-					
 				}
 			}
 			else
 			{
 				if(coll.transform.CompareTag("Player"))
 				{
-					PlayerControl player = coll.transform.GetComponent<PlayerControl>();
-					player.HP -= damage;
+					coll.transform
+						.GetComponent<PlayerControl>()
+						.GetDamage(damage);
+
 					Destroy(gameObject);
 				}
 			}
